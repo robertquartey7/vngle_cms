@@ -34,15 +34,12 @@ const Popup = (props) => {
         </span>
         <div className={popupStyles.content}>
           <div className="d-flex justify-content-center">
-            <div className={`bg-dark text-white ${popupStyles.metadata}`} >
-             
+            <div className={`bg-dark text-white ${popupStyles.metadata}`}>
               {Object.keys(data.object).map((key, i) => (
-                <p key={i} className='bg-light text-dark '>
-                  <span>{key} : </span>
-                  <span>{data.object[key]}</span>
+                <p key={i} className="bg-light text-dark ">
+                  <span>{key} </span>:<span>{data.object[key]}</span>
                 </p>
               ))}
-            
             </div>
           </div>
         </div>
